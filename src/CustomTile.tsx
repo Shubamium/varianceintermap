@@ -1,13 +1,15 @@
 import { useEffect, useRef } from "react";
 import L from "leaflet";
 import "leaflet/dist/leaflet.css";
-// eslint-disable-next-line @typescript-eslint/no-unused-vars
-import RasterCoords from "leaflet-rastercoords";
+
 const size = [8192, 5063];
 
-export default function LeafletMap({ openSidebar }: any) {
+export default function LeafletMap({
+  openSidebar,
+}: {
+  openSidebar: (corp: string) => void;
+}) {
   const mapRef = useRef(null);
-
   useEffect(() => {
     if (mapRef.current) {
       const map = L.map(mapRef.current, {
@@ -105,7 +107,7 @@ export default function LeafletMap({ openSidebar }: any) {
         direction: "top",
       });
     }
-  }, []);
+  }, [openSidebar]);
 
   return (
     <>
