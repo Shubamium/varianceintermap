@@ -1,4 +1,3 @@
-/* eslint-disable @typescript-eslint/no-unused-vars */
 /* eslint-disable react-hooks/exhaustive-deps */
 import { useEffect, useRef } from "react";
 import L from "leaflet";
@@ -12,6 +11,8 @@ export default function LeafletMap({
 }: {
   openSidebar: (corp: string) => void;
 }) {
+  console.log(RasterCoords);
+
   const mapRef = useRef(null);
   useEffect(() => {
     if (mapRef.current) {
