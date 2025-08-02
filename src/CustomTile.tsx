@@ -1,7 +1,10 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
+/* eslint-disable react-hooks/exhaustive-deps */
 import { useEffect, useRef } from "react";
 import L from "leaflet";
-import "leaflet/dist/leaflet.css";
+import RasterCoords from "leaflet-rastercoords";
 
+import "leaflet/dist/leaflet.css";
 const size = [8192, 5063];
 
 export default function LeafletMap({
@@ -107,7 +110,7 @@ export default function LeafletMap({
         direction: "top",
       });
     }
-  }, [openSidebar]);
+  }, []);
 
   return (
     <>
