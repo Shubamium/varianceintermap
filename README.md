@@ -10,7 +10,7 @@ Install dependencies first:
 npm install
 ```
 
-Then run:
+Then run to start the server:
 
 ```js
 npm run dev

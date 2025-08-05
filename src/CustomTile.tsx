@@ -15,8 +15,8 @@ const size = [8192, 5063];
 // rc.unproject([0, 0]);
 
 type SidebarOptions = {
-  title: "string";
-  content: "string";
+  title: string;
+  content: string;
 };
 
 // Icon Marker List
@@ -30,6 +30,11 @@ const IconList: {
   {
     name: "Corrupter",
     position: [4000, 1500], // Position in Pixel Coordinate
+    sidebar: {
+      title: "Corrupter",
+      content:
+        "Etiam non nulla faucibus, congue nisl eu, condimentum purus. Quisque volutpat sollicitudin dui non hendrerit. Curabitur porttitor turpis tempor nulla commodo elementum. Duis ultricies felis a nisi tristique, id dignissim augue scelerisque. Aliquam luctus tempus magna, eget auctor metus lacinia nec. Cras ligula lacus, sollicitudin non pharetra sed, aliquet eget tortor. Proin nec dignissim nibh, non sodales augue. Donec eget nulla id elit fringilla euismod. ",
+    },
     options: {
       iconUrl: "/corrupters.png",
       iconSize: [150, 150], // Might be stretched
@@ -87,7 +92,7 @@ const PlacesNameList: {
 export default function LeafletMap({
   openSidebar,
 }: {
-  openSidebar: (corp: string) => void;
+  openSidebar: (corp: string, content: string) => void;
 }) {
   const mapRef = useRef(null);
 
@@ -120,6 +125,12 @@ export default function LeafletMap({
           marker.bindTooltip(icon.name, {
             direction: "bottom",
           });
+
+          marker.on("click", () => {
+            if (icon.sidebar) {
+              openSidebar(icon.sidebar.title, icon.sidebar.content);
+            }
+          });
           list.push(marker);
         });
         return L.layerGroup(list).addTo(map);
@@ -135,61 +146,12 @@ export default function LeafletMap({
       };
       const factions = addIconsToMap();
       const smallPlaces = addSmallPlacesToMap();
-      // const f1Icon = L.icon({
-      //   iconUrl: "/corrupters.png",
-      //   iconSize: [150, 150],
-      //   iconAnchor: [75, 75],
-      //   popupAnchor: [0, 75],
-      //   tooltipAnchor: [-5, -76],
-      //   className: "faction-icons",
-      //   shadowSize: [41, 41],
-      // });
-      // const f2icon = L.icon({
-      //   iconUrl: "/nakoda.png",
-      //   iconSize: [150, 150],
-      //   iconAnchor: [75, 75],
-      //   tooltipAnchor: [-5, -76],
-      //   popupAnchor: [0, 75],
-      //   className: "faction-icons",
-      // });
-      // const f3icon = L.icon({
-      //   iconUrl: "/ziton.png",
-      //   iconSize: [110, 150],
-      //   iconAnchor: [75, 75],
-      //   popupAnchor: [0, -250],
-      //   tooltipAnchor: [-5, -76],
-      //   className: "faction-icons",
-      // });
 
-      // const f1 = L.marker(rc.unproject([4000, 1500]), { icon: f1Icon }).addTo(
-      //   map
-      // );
-      // const f2 = L.marker(rc.unproject([2000, 3200]), { icon: f2icon }).addTo(
-      //   map
-      // );
-      // const f3 = L.marker(rc.unproject([4500, 2200]), { icon: f3icon }).addTo(
-      //   map
-      // );
-
-      // f1.on("click", () => {
-      //   openSidebar("Corrupters");
-      // });
-      // f2.on("click", () => {
-      //   openSidebar("Nakoda");
-      // });
-      // f3.on("click", () => {
-      //   openSidebar("Ziton");
-      // });
-
-      // Initialize First Layer
-      // map.addLayer(factions);
-      // map.addLayer(smallPlaces);
-
-      // Layer Visibility based on zoom level
+      // Control Layer Visibility based on zoom level
       map.on("zoom", () => {
         const zoom = map.getZoom();
 
-        if (zoom >= 4) {
+        if (zoom >= 5) {
           // Show on zoom level more than 4
           map.addLayer(smallPlaces);
           map.removeLayer(factions);
@@ -199,16 +161,6 @@ export default function LeafletMap({
           map.removeLayer(smallPlaces);
         }
       });
-
-      // f1.bindTooltip("Corrupters", {
-      //   direction: "top",
-      // });
-      // f2.bindTooltip("Nakoda", {
-      //   direction: "top",
-      // });
-      // f3.bindTooltip("Ziton", {
-      //   direction: "top",
-      // });
     }
   }, []);
 
