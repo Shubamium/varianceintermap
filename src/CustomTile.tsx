@@ -94,6 +94,7 @@ export default function LeafletMap({
 }: {
   openSidebar: (corp: string, content: string) => void;
 }) {
+  console.log(RasterCoords);
   const mapRef = useRef(null);
 
   useEffect(() => {
