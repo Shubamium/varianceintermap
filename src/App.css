@@ -95,3 +95,13 @@
 #root:has(.sidebar.open) #map {
   transform: translateX(35vw);
 }
+
+.poi {
+  font-weight: bold;
+  text-transform: uppercase;
+  color: white;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 1.4rem;
+  white-space: nowrap;
+  text-shadow: 0px 0px 4px black;
+}
