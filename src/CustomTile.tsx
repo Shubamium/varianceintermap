@@ -33,7 +33,7 @@ const IconList: {
     sidebar: {
       title: "Seraphine",
       content:
-        "Etiam non nulla faucibus, congue nisl eu, condimentum purus. Quisque volutpat sollicitudin dui non hendrerit. Curabitur porttitor turpis tempor nulla commodo elementum. Duis ultricies felis a nisi tristique, id dignissim augue scelerisque. Aliquam luctus tempus magna, eget auctor metus lacinia nec. Cras ligula lacus, sollicitudin non pharetra sed, aliquet eget tortor. Proin nec dignissim nibh, non sodales augue. Donec eget nulla id elit fringilla euismod. ",
+        "\"Each step on the path of the righteous is guided by the grace of the Goddess. Your time in the Stel LaPhia has prepared you for the challenge ahead. Make the journey of the soul, and fly on wings of faith to the land that was promised. There, you will find true bliss.\"",
     },
     options: {
       iconUrl: "/factions/Seraphine_logo-1.png",
