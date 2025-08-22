@@ -28,15 +28,33 @@ const IconList: {
   sidebar?: SidebarOptions;
 }[] = [
   {
+    name: "Seraphine",
+    position: [5100, 4600], // Position in Pixel Coordinate
+    sidebar: {
+      title: "Seraphine",
+      content:
+        "Etiam non nulla faucibus, congue nisl eu, condimentum purus. Quisque volutpat sollicitudin dui non hendrerit. Curabitur porttitor turpis tempor nulla commodo elementum. Duis ultricies felis a nisi tristique, id dignissim augue scelerisque. Aliquam luctus tempus magna, eget auctor metus lacinia nec. Cras ligula lacus, sollicitudin non pharetra sed, aliquet eget tortor. Proin nec dignissim nibh, non sodales augue. Donec eget nulla id elit fringilla euismod. ",
+    },
+    options: {
+      iconUrl: "/factions/Seraphine_logo-1.png",
+      iconSize: [125, 150], // Might be stretched
+      iconAnchor: [75, 75],
+      popupAnchor: [0, 75],
+      tooltipAnchor: [-5, -76],
+      className: "faction-icons",
+      shadowSize: [41, 41],
+    },
+  },
+  {
     name: "Corrupter",
-    position: [4000, 1500], // Position in Pixel Coordinate
+    position: [5450, 1000], 
     sidebar: {
       title: "Corrupter",
       content:
         "Etiam non nulla faucibus, congue nisl eu, condimentum purus. Quisque volutpat sollicitudin dui non hendrerit. Curabitur porttitor turpis tempor nulla commodo elementum. Duis ultricies felis a nisi tristique, id dignissim augue scelerisque. Aliquam luctus tempus magna, eget auctor metus lacinia nec. Cras ligula lacus, sollicitudin non pharetra sed, aliquet eget tortor. Proin nec dignissim nibh, non sodales augue. Donec eget nulla id elit fringilla euismod. ",
     },
     options: {
-      iconUrl: "/corrupters.png",
+      iconUrl: "/factions/Corrupters_logo-1.png",
       iconSize: [150, 150], // Might be stretched
       iconAnchor: [75, 75],
       popupAnchor: [0, 75],
@@ -47,9 +65,14 @@ const IconList: {
   },
   {
     name: "Nakoda",
-    position: [2000, 3200],
+    position: [5200, 2200],
+    sidebar: {
+      title: "The United Tribes of Nakoda",
+      content:
+        "Etiam non nulla faucibus, congue nisl eu, condimentum purus. Quisque volutpat sollicitudin dui non hendrerit. Curabitur porttitor turpis tempor nulla commodo elementum. Duis ultricies felis a nisi tristique, id dignissim augue scelerisque. Aliquam luctus tempus magna, eget auctor metus lacinia nec. Cras ligula lacus, sollicitudin non pharetra sed, aliquet eget tortor. Proin nec dignissim nibh, non sodales augue. Donec eget nulla id elit fringilla euismod. ",
+    },
     options: {
-      iconUrl: "/nakoda.png",
+      iconUrl: "/factions/Nakoda_logo-1.png",
       iconSize: [150, 150],
       iconAnchor: [75, 75],
       tooltipAnchor: [-5, -76],
@@ -59,9 +82,48 @@ const IconList: {
   },
   {
     name: "Ziton Corporation",
-    position: [4500, 2200],
+    position: [1780, 3100] ,
+    sidebar: {
+      title: "Ziton Corporation",
+      content:
+        "Etiam non nulla faucibus, congue nisl eu, condimentum purus. Quisque volutpat sollicitudin dui non hendrerit. Curabitur porttitor turpis tempor nulla commodo elementum. Duis ultricies felis a nisi tristique, id dignissim augue scelerisque. Aliquam luctus tempus magna, eget auctor metus lacinia nec. Cras ligula lacus, sollicitudin non pharetra sed, aliquet eget tortor. Proin nec dignissim nibh, non sodales augue. Donec eget nulla id elit fringilla euismod. ",
+    },
     options: {
-      iconUrl: "/ziton.png",
+      iconUrl: "/factions/Ziton_logo-1.png",
+      iconSize: [110, 150],
+      iconAnchor: [75, 75],
+      popupAnchor: [0, -250],
+      tooltipAnchor: [-5, -76],
+      className: "faction-icons",
+    },
+  },
+  {
+    name: "Gan Eden",
+    position: [1630, 3650] ,
+    sidebar: {
+      title: "Gan Eden",
+      content:
+        "Etiam non nulla faucibus, congue nisl eu, condimentum purus. Quisque volutpat sollicitudin dui non hendrerit. Curabitur porttitor turpis tempor nulla commodo elementum. Duis ultricies felis a nisi tristique, id dignissim augue scelerisque. Aliquam luctus tempus magna, eget auctor metus lacinia nec. Cras ligula lacus, sollicitudin non pharetra sed, aliquet eget tortor. Proin nec dignissim nibh, non sodales augue. Donec eget nulla id elit fringilla euismod. ",
+    },
+    options: {
+      iconUrl: "/factions/GanEden_logo-1.png",
+      iconSize: [180, 150],
+      iconAnchor: [75, 75],
+      popupAnchor: [0, -250],
+      tooltipAnchor: [-5, -76],
+      className: "faction-icons",
+    },
+  },
+  {
+    name: "Cairon Empire",
+    position: [4150, 1300] ,
+    sidebar: {
+      title: "Cairon Empire",
+      content:
+        "Etiam non nulla faucibus, congue nisl eu, condimentum purus. Quisque volutpat sollicitudin dui non hendrerit. Curabitur porttitor turpis tempor nulla commodo elementum. Duis ultricies felis a nisi tristique, id dignissim augue scelerisque. Aliquam luctus tempus magna, eget auctor metus lacinia nec. Cras ligula lacus, sollicitudin non pharetra sed, aliquet eget tortor. Proin nec dignissim nibh, non sodales augue. Donec eget nulla id elit fringilla euismod. ",
+    },
+    options: {
+      iconUrl: "/factions/Cairon_logo-1.png",
       iconSize: [110, 150],
       iconAnchor: [75, 75],
       popupAnchor: [0, -250],
