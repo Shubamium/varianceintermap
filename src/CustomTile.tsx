@@ -120,7 +120,7 @@ const IconList: {
     sidebar: {
       title: "Cairon Empire",
       content:
-        "Etiam non nulla faucibus, congue nisl eu, condimentum purus. Quisque volutpat sollicitudin dui non hendrerit. Curabitur porttitor turpis tempor nulla commodo elementum. Duis ultricies felis a nisi tristique, id dignissim augue scelerisque. Aliquam luctus tempus magna, eget auctor metus lacinia nec. Cras ligula lacus, sollicitudin non pharetra sed, aliquet eget tortor. Proin nec dignissim nibh, non sodales augue. Donec eget nulla id elit fringilla euismod. ",
+        "A nation most regal in name, a peoples most opulent in nature.",
     },
     options: {
       iconUrl: "/factions/Cairon_logo-1.png",
