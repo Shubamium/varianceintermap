@@ -9,5 +9,8 @@ COPY . .
 RUN npm run build
 
 # 3. Start app
-EXPOSE 5173
-CMD ["npm", "start"]
+FROM nginx:alpine
+COPY --from=build /app/dist /usr/share/nginx/html
+
+# Optional: overwrite nginx config to support SPA routing
+COPY nginx.conf /etc/nginx/conf.d/default.conf
