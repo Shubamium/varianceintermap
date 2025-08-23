@@ -170,17 +170,149 @@ const PlacesNameList: {
   position: [number, number];
   options: L.MarkerOptions;
 }[] = [
-  // {
-  //   position: [3350, 1600],
+  {
+    position: [3350, 1580],
+    options: {
+      title: "Weaponfall",
+      icon: L.divIcon({
+        className: "poi",
+        html: "Weaponfall",
+        iconSize: [200, 200],
+      }),
+    },
+  },
+    {
+    position: [5060, 2500],
+    options: {
+      title: "The Sanctuary",
+      icon: L.divIcon({
+        className: "poi",
+        html: "The Sanctuary",
+        iconSize: [200, 200],
+      }),
+    },
+  },
+      {
+    position: [4700, 2020],
+    options: {
+      title: "Lignarian Frontier",
+      icon: L.divIcon({
+        className: "poi",
+        html: "Lignarian Frontier",
+        iconSize: [200, 200],
+      }),
+    },
+  },
+  {
+    position: [2650, 1660],
+    options: {
+      title: "Kingdom of Lumidia",
+      icon: L.divIcon({
+        className: "poi",
+        html: "Kingdom of Lumidia",
+        iconSize: [200, 200],
+      }),
+    },
+  },
+    {
+    position: [3200, 1060],
+    options: {
+      title: "Kingdom of Vespasia",
+      icon: L.divIcon({
+        className: "poi",
+        html: "Kingdom of Vespasia",
+        iconSize: [200, 200],
+      }),
+    },
+  },
+    {
+    position: [3850, 1100],
+    options: {
+      title: "Kingdom of Raganvald",
+      icon: L.divIcon({
+        className: "poi",
+        html: "Kingdom of Raganvald",
+        iconSize: [200, 200],
+      }),
+    },
+  },
+    {
+    position: [4100, 1500],
+    options: {
+      title: "Heart of Cairon",
+      icon: L.divIcon({
+        className: "poi",
+        html: "Heart of Cairon",
+        iconSize: [200, 200],
+      }),
+    },
+  },
+    {
+    position: [3950, 1350],
+    options: {
+      title: "Sable Silver Mines",
+      icon: L.divIcon({
+        className: "poi",
+        html: "Sable Silver Mines",
+        iconSize: [200, 200],
+      }),
+    },
+  },
+    {
+    position: [5100, 4690],
+    options: {
+      title: "Del LaPhia",
+      icon: L.divIcon({
+        className: "poi",
+        html: "Del LaPhia",
+        iconSize: [200, 200],
+      }),
+    },
+  },
+      {
+    position: [1770, 3500],
+    options: {
+      title: "Xtasis",
+      icon: L.divIcon({
+        className: "poi",
+        html: "Xtasis",
+        iconSize: [200, 200],
+      }),
+    },
+  },
+  //     {
+  //   position: [1610, 3380],
   //   options: {
-  //     title: "Weaponfall",
+  //     title: "Dunari-Sable Gate",
   //     icon: L.divIcon({
   //       className: "poi",
-  //       html: "Weaponfall",
+  //       html: "Dunari-Sable Gate",
   //       iconSize: [200, 200],
   //     }),
   //   },
   // },
+    {
+    position: [5050, 1600],
+    options: {
+      title: "The Great Wound",
+      icon: L.divIcon({
+        className: "poi",
+        html: "The Great Wound",
+        iconSize: [200, 200],
+      }),
+    },
+  },
+      {
+    position: [5900, 1350],
+    options: {
+      title: "Banyaku Delta",
+      icon: L.divIcon({
+        className: "poi",
+        html: "Banyaku Delta",
+        iconSize: [200, 200],
+      }),
+    },
+  },
 ];
 
 export default function LeafletMap({
