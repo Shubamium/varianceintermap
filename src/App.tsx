@@ -24,6 +24,48 @@ function App() {
           ))}
         </p>
       </div>
+      {/* Clickable text that opens the sidebar */}
+      <button
+        className="btn"
+        style={{
+          position: "fixed",
+          bottom: "25px",
+          left: "5px",
+          zIndex: 1000,
+          fontSize: "1.5rem",
+          padding: "0.75em 2em",
+          color: "white"
+        }}
+        onClick={() => {
+          setSb(true);
+          setTitle("Map Asset Credits");
+          setDesc(`Assets used in this map are owned by their respective creators and are used here under commercial licenses or with permission.:
+
+            Project Earth Theme
+            Author: Nexoness (Innozoom)
+            License: CC-BY-ND 4.0
+            Link: https://cartographyassets.com/assets/4889/project-earth
+
+            CG2A - Mazlo Assets
+            Author: Mazlo
+            License: Attached Content License Agreement
+            Link: www.patreon.com/cg2a/posts
+
+            Rough Seas Theme
+            Author: JChunick
+            License: Attached Content License Agreement
+            Link: https://cartographyassets.com/assets/7454/rough-seas-theme-commercial
+
+            AoA WonderDraft Assets
+            Author: AoA Store
+            License: Attached Content License Agreement
+            Link: https://payhip.com/AoA
+
+            `);
+        }}
+      >
+        Credits
+      </button>
       <LeafletMap
         openSidebar={(name: string, sbDesc: string) => {
           setSb(() => true);

@@ -171,12 +171,12 @@ const PlacesNameList: {
   options: L.MarkerOptions;
 }[] = [
   // {
-  //   position: [5000, 2400],
+  //   position: [3350, 1600],
   //   options: {
-  //     title: "Place Name",
+  //     title: "Weaponfall",
   //     icon: L.divIcon({
   //       className: "poi",
-  //       html: "Place Name Here",
+  //       html: "Weaponfall",
   //       iconSize: [200, 200],
   //     }),
   //   },
