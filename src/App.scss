@@ -85,6 +85,26 @@
   background: var(--color);
 }
 
+.faction-icons.seraphine-icon:hover {
+  filter: drop-shadow(0px 0px 12px rgb(255, 0, 255, 0.6));
+}
+.faction-icons.corrupter-icon:hover {
+  filter: drop-shadow(0px 0px 12px rgb(195, 0, 255, 0.6));
+}
+.faction-icons.nakoda-icon:hover {
+  filter: drop-shadow(0px 0px 12px rgb(9, 255, 0, 0.6));
+}
+.faction-icons.ziton-icon:hover {
+  filter: drop-shadow(0px 0px 12px rgb(0, 157, 255, 0.6));
+}
+.faction-icons.ganeden-icon:hover {
+  filter: drop-shadow(0px 0px 12px rgb(255, 153, 0, 0.6));
+}
+.faction-icons.cairon-icon:hover {
+  filter: drop-shadow(0px 0px 12px rgb(255, 0, 0, 0.6));
+}
+
+
 .sidebar {
   position: fixed;
   top: 0%;
@@ -172,3 +192,4 @@ body {
   font-size: 1.2rem;
   border: 2px solid var(--bblack);
 }
+

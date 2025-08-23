@@ -41,7 +41,7 @@ const IconList: {
       iconAnchor: [75, 75],
       popupAnchor: [0, 75],
       tooltipAnchor: [-5, -76],
-      className: "faction-icons",
+      className: "faction-icons seraphine-icon",
       shadowSize: [41, 41],
     },
   },
@@ -59,7 +59,7 @@ const IconList: {
       iconAnchor: [75, 75],
       popupAnchor: [0, 75],
       tooltipAnchor: [-5, -76],
-      className: "faction-icons",
+      className: "faction-icons corrupter-icon",
       shadowSize: [41, 41],
     },
   },
@@ -77,7 +77,7 @@ const IconList: {
       iconAnchor: [75, 75],
       tooltipAnchor: [-5, -76],
       popupAnchor: [0, 75],
-      className: "faction-icons",
+      className: "faction-icons nakoda-icon",
     },
   },
   {
@@ -94,7 +94,7 @@ const IconList: {
       iconAnchor: [75, 75],
       popupAnchor: [0, -250],
       tooltipAnchor: [-5, -76],
-      className: "faction-icons",
+      className: "faction-icons ziton-icon",
     },
   },
   {
@@ -111,7 +111,7 @@ const IconList: {
       iconAnchor: [75, 75],
       popupAnchor: [0, -250],
       tooltipAnchor: [-5, -76],
-      className: "faction-icons",
+      className: "faction-icons ganeden-icon",
     },
   },
   {
@@ -128,7 +128,7 @@ const IconList: {
       iconAnchor: [75, 75],
       popupAnchor: [0, -250],
       tooltipAnchor: [-5, -76],
-      className: "faction-icons",
+      className: "faction-icons cairon-icon",
     },
   },
 ];
