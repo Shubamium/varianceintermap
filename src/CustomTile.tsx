@@ -247,6 +247,17 @@ const PlacesNameList: {
       }),
     },
   },
+  //   {
+  //   position: [4000, 1700],
+  //   options: {
+  //     title: "Port City of Magnolia",
+  //     icon: L.divIcon({
+  //       className: "poi",
+  //       html: "Port City of Magnolia",
+  //       iconSize: [200, 200],
+  //     }),
+  //   },
+  // },
     {
     position: [3950, 1350],
     options: {

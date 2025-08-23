@@ -43,7 +43,7 @@ function App() {
 
             Project Earth Theme
             Author: Nexoness (Innozoom)
-            License: CC-BY-ND 4.0
+            License: CC-BY-ND 4.0 - no changes made to materials
             Link: https://cartographyassets.com/assets/4889/project-earth
 
             CG2A - Mazlo Assets
