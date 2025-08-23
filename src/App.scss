@@ -193,3 +193,12 @@ body {
   border: 2px solid var(--bblack);
 }
 
+.leaflet-tooltip {
+  background: black !important;
+  color: #61dafbaa !important;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  font-size: 1.2rem;
+  border: 2px solid var(--bblack);
+}
+
