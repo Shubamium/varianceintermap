@@ -1,6 +1,6 @@
 import "leaflet/dist/leaflet.css";
 import LeafletMap from "./CustomTile";
-import "./App.css";
+import "./App.scss";
 import { useState } from "react";
 
 function App() {
@@ -11,7 +11,9 @@ function App() {
   return (
     <>
       <div className={`sidebar ${sb ? "open" : "closed"}`}>
-        <button onClick={() => setSb(!sb)}>CLOSE</button>
+        <button className="btn" onClick={() => setSb(!sb)}>
+          CLOSE
+        </button>
         <h1>{title}</h1>
         <p>{desc}</p>
       </div>

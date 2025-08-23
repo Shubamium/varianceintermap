@@ -1,5 +1,4 @@
 /* eslint-disable react-hooks/exhaustive-deps */
-/* eslint-disable @typescript-eslint/no-unused-vars */
 
 import { useEffect, useRef } from "react";
 import L from "leaflet";
@@ -24,6 +23,7 @@ const IconList: {
   name: string;
   position: [number, number];
   options: L.IconOptions;
+  glowColor?: string;
   tooltip?: string;
   sidebar?: SidebarOptions;
 }[] = [
@@ -33,7 +33,7 @@ const IconList: {
     sidebar: {
       title: "Seraphine",
       content:
-        "\"Each step on the path of the righteous is guided by the grace of the Goddess. Your time in the Stel LaPhia has prepared you for the challenge ahead. Make the journey of the soul, and fly on wings of faith to the land that was promised. There, you will find true bliss.\"",
+        '"Each step on the path of the righteous is guided by the grace of the Goddess. Your time in the Stel LaPhia has prepared you for the challenge ahead. Make the journey of the soul, and fly on wings of faith to the land that was promised. There, you will find true bliss."',
     },
     options: {
       iconUrl: "/factions/Seraphine_logo-1.png",
@@ -47,7 +47,7 @@ const IconList: {
   },
   {
     name: "Corrupter",
-    position: [5450, 1000], 
+    position: [5450, 1000],
     sidebar: {
       title: "Corrupter",
       content:
@@ -82,12 +82,13 @@ const IconList: {
   },
   {
     name: "Ziton Corporation",
-    position: [1780, 3100] ,
+    position: [1780, 3100],
     sidebar: {
       title: "Ziton Corporation",
       content:
         "Etiam non nulla faucibus, congue nisl eu, condimentum purus. Quisque volutpat sollicitudin dui non hendrerit. Curabitur porttitor turpis tempor nulla commodo elementum. Duis ultricies felis a nisi tristique, id dignissim augue scelerisque. Aliquam luctus tempus magna, eget auctor metus lacinia nec. Cras ligula lacus, sollicitudin non pharetra sed, aliquet eget tortor. Proin nec dignissim nibh, non sodales augue. Donec eget nulla id elit fringilla euismod. ",
     },
+    glowColor: "red",
     options: {
       iconUrl: "/factions/Ziton_logo-1.png",
       iconSize: [110, 150],
@@ -99,7 +100,7 @@ const IconList: {
   },
   {
     name: "Gan Eden",
-    position: [1630, 3650] ,
+    position: [1630, 3650],
     sidebar: {
       title: "Gan Eden",
       content:
@@ -116,11 +117,10 @@ const IconList: {
   },
   {
     name: "Cairon Empire",
-    position: [4150, 1300] ,
+    position: [4150, 1300],
     sidebar: {
       title: "Cairon Empire",
-      content:
-        "A nation most regal in name, a peoples most opulent in nature.",
+      content: "A nation most regal in name, a peoples most opulent in nature.",
     },
     options: {
       iconUrl: "/factions/Cairon_logo-1.png",
@@ -184,9 +184,12 @@ export default function LeafletMap({
         IconList.forEach((icon) => {
           const marker = L.marker(rc.unproject(icon.position), {
             icon: L.icon(icon.options),
-          });
+            attribution: icon.glowColor,
+            alt: icon.glowColor ?? "#009dff",
+          } as L.MarkerOptions);
           marker.bindTooltip(icon.name, {
             direction: "bottom",
+            className: "ll-tooltip",
           });
 
           marker.on("click", () => {
