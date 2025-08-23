@@ -35,7 +35,9 @@ const IconList: {
       content:
         `❝ May the goddess bless you. ❞
         
-        Bathed in the Goddess' tears, the Cult of La' Seraphine follow her teaching faithfully, drawing power from their emotional tides, a testament to the devine dance of cosmic intention.
+        Bathed in the Goddess' tears, the Seraphine follow her teaching faithfully, drawing power from their emotional tides, a testament to the divine dance of cosmic intention.
+
+        The tears of the Goddess are also known as “Astral Droplets” and are collected from a sacred basin hidden within the floating city of Del LaPhia. Upon being placed within specialized artificia, the droplets' latent power can be drawn out to aid the Seraphine cause.
         `,
     },
     options: {
@@ -52,11 +54,14 @@ const IconList: {
     name: "Corrupter",
     position: [5450, 1000], 
     sidebar: {
-      title: "The Corrupted",
+      title: "The Corrupters",
       content:
         `❝ Equilibrium shall be reached. ❞
         
-        Driven by an insatiable hunger for aracana, those influenced by the ancient whispers of Izun ravage through realms, casting shadows of chaos and despair.
+        The Corrupters are beings influenced by the ancient whispers of Izun, God of Corruption. Often, Corrupters are driven by an insatiable hunger for aracana and will ravage through realms, casting shadows of chaos and despair.
+
+        Izun, once the God of Balance, wished to create equilibrium between the Gods and their creations. Yet betrayed and imprisoned, he awaits his chance to end it all in the name of true balance.
+
         `,
     },
     options: {
@@ -77,7 +82,9 @@ const IconList: {
       content:
         `❝ In unison with the spirits. ❞
         
-        In the spirtual harmony of the wilderness, the clans of Nakoda intertwine their destinies with the rhythmns of the earth, their shared essence echoing the song of unity.
+        In spirtual harmony with the wilderness, the clans of Nakoda intertwine their destinies with the rhythmns of the earth, their shared essence echoing the song of unity.
+        
+        Long ago, the clans of the Great Forest put aside their rivalries and vowed to face any outside threats as a united people. No longer divided by individual interests, the Nakoda chose to be defined by shared beliefs, a common history, and their desire to protect their home.
         `,
     },
     options: {
@@ -97,9 +104,9 @@ const IconList: {
       content:
         `❝ Order is the right answer. ❞
         
-        Xtasis, the planet’s largest city, thrives on its monopoly of Arcana Stones. The abundance of energy from these stones led to the rise of Ziton Corporation, which developed groundbreaking arcana technology and established itself as a leading high-tech enterprise in the region.
+        Xtasis, capitol of the United Dunari Federation, is a city built through the exploitation of Arcana Stones.  The abundance of energy from these stones led to the rise of Ziton Corporation, which developed groundbreaking arcana technology and established itself as a leading high-tech enterprise in the region.
         
-        Yet between the city's center and Outer Rim lies a darker side, a society where the rich get richer amd the poor left behind.
+        Yet between the city's center and Outer Rim lies a darker side, a society where the rich get richer and the poor left behind.
         `,
     },
     options: {
@@ -121,7 +128,7 @@ const IconList: {
         
         Rejecting the hollow neon glow of Xtasis, the rebels of Gan Eden fight tooth and nail to reclaim a future stolen by greed. Their mission is clear: cleanse Arcblight's poison, stop Ziton's plunder, and build an untamed garden where life can flourish.
         
-        Ziton has tech, numbers, and wealth, but Gan Eden has something stronger ー the will to fight for a world worth living in.
+        Ziton has tech, numbers, and wealth, but Gan Eden has something stronger ー the will to fight for a world worth living in. Their activities range from guerrilla sabotage against Ziton's infrastructure to clandestine operations to aid the oppressed citizens of the Outer Rim.
         `,
     },
     options: {
@@ -141,11 +148,15 @@ const IconList: {
       content:
         `❝ Power reigns absolute. ❞
 
-        The Cairon Empire is a nation most regal in name and its peoples are most opulent in nature. Within the empire corrupt nobles dance upon a stage of treachery, while wars echo the symphony of shattered souls.`,
-    },
+        The Cairon Empire is a nation most regal in name and its peoples are most opulent in nature. Within the empire corrupt nobles dance upon a stage of treachery, while wars echo the symphony of shattered souls.
+        
+        The Empire stands unchallenged within its borders, led by the imperial family which holds the authority of Valorbane, a legendary sentient sword. So long as this sword has a wielder, the Cairon Empire thrives.
+        `,
+
+      },  
     options: {
       iconUrl: "/factions/Cairon_logo-1.png",
-      iconSize: [110, 150],
+      iconSize: [130, 150],
       iconAnchor: [75, 75],
       popupAnchor: [0, -250],
       tooltipAnchor: [-5, -76],
@@ -159,17 +170,17 @@ const PlacesNameList: {
   position: [number, number];
   options: L.MarkerOptions;
 }[] = [
-  {
-    position: [5000, 2400],
-    options: {
-      title: "Place Name",
-      icon: L.divIcon({
-        className: "poi",
-        html: "Place Name Here",
-        iconSize: [200, 200],
-      }),
-    },
-  },
+  // {
+  //   position: [5000, 2400],
+  //   options: {
+  //     title: "Place Name",
+  //     icon: L.divIcon({
+  //       className: "poi",
+  //       html: "Place Name Here",
+  //       iconSize: [200, 200],
+  //     }),
+  //   },
+  // },
 ];
 
 export default function LeafletMap({
