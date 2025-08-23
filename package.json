@@ -17,6 +17,7 @@
     "react": "^19.0.0-rc.1",
     "react-dom": "^19.0.0-rc.1",
     "react-leaflet": "^5.0.0",
+    "sass": "^1.90.0",
     "vite-plugin-commonjs": "^0.10.4"
   },
   "devDependencies": {

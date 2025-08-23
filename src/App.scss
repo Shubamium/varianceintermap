@@ -1,0 +1,174 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+:root {
+  --bb: #38bddc;
+  --db: #134c67;
+  --ddb: #113841;
+  --black: #0e0e0e;
+  --ease: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  --g: #575757;
+  --bblack: #0c1d20;
+}
+#root {
+  text-align: left;
+  background: var(--bblack);
+  // height: 100vw;
+  height: 100vh;
+  width: 100vw;
+  overflow: clip;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+.map {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0%;
+  left: 0%;
+  z-index: 100;
+}
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+.leaflet-container {
+  background-color: var(--black);
+  width: 100%;
+}
+
+.faction-icons {
+  filter: drop-shadow(0px 0px 4px black);
+  transition: all 500ms ease;
+}
+.faction-icons:hover {
+  --color: #009dff;
+  --color: attr(data-color, color);
+  scale: 1.01;
+  filter: drop-shadow(0px 0px 12px attr(data-color));
+  background: var(--color);
+}
+
+.sidebar {
+  position: fixed;
+  top: 0%;
+  left: 0%;
+  background: linear-gradient(#0e0e0e, #0c1d20);
+  color: white;
+  font-size: 2rem;
+  width: 35vw;
+  height: 100vh;
+  padding: 2em;
+  z-index: 1000;
+  transition: all 400ms cubic-bezier(0.445, 0.05, 0.55, 0.95);
+}
+.sidebar.closed {
+  transform: translateX(-53vw);
+}
+.sidebar h1 {
+  font-size: 2.5rem;
+  color: var(--bb);
+  margin-top: 20px;
+  margin-bottom: 0.55em;
+  border-bottom: 1px solid var(--db);
+  padding-bottom: 0.25em;
+}
+.sidebar p {
+  font-size: 1rem;
+  line-height: 1.4;
+}
+
+.sidebar button {
+  background: #0e0e0e;
+  color: white;
+  border: 2px solid var(--bb);
+  padding: 0.25em 1em;
+  font-size: 1rem;
+  font-weight: 1rem;
+  margin: 1em 0;
+  font-weight: bolder;
+}
+
+#map {
+  transition: all 500ms ease;
+}
+#root:has(.sidebar.open) #map {
+  transform: translateX(35vw);
+}
+
+.poi {
+  font-weight: bold;
+  text-transform: uppercase;
+  color: white;
+  font-size: 1.4rem;
+  white-space: nowrap;
+  text-shadow: 0px 0px 4px black;
+}
+
+.btn {
+  cursor: pointer;
+  transition: all 200ms ease;
+  &:hover {
+    scale: 1.05;
+  }
+  &:active {
+    scale: 0.95;
+  }
+}
+
+button {
+  padding: 0;
+  outline: none;
+  border: none;
+  background: none;
+  text-decoration: none;
+}
+
+body {
+  background: var(--black);
+}
+
+.ll-tooltip {
+  background: black;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  color: var(--bb);
+  font-size: 1.2rem;
+  border: 2px solid var(--bblack);
+}
