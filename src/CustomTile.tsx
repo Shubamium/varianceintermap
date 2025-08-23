@@ -33,7 +33,7 @@ const IconList: {
     sidebar: {
       title: "Seraphine",
       content:
-        "\"Each step on the path of the righteous is guided by the grace of the Goddess. Your time in the Stel LaPhia has prepared you for the challenge ahead. Make the journey of the soul, and fly on wings of faith to the land that was promised. There, you will find true bliss.\"",
+        "\"May the goddess bless you. \" \n \"Each step on the path of the righteous is guided by the grace of the Goddess. Your time in the Stel LaPhia has prepared you for the challenge ahead. Make the journey of the soul, and fly on wings of faith to the land that was promised. There, you will find true bliss.\"",
     },
     options: {
       iconUrl: "/factions/Seraphine_logo-1.png",
@@ -51,7 +51,7 @@ const IconList: {
     sidebar: {
       title: "Corrupter",
       content:
-        "Etiam non nulla faucibus, congue nisl eu, condimentum purus. Quisque volutpat sollicitudin dui non hendrerit. Curabitur porttitor turpis tempor nulla commodo elementum. Duis ultricies felis a nisi tristique, id dignissim augue scelerisque. Aliquam luctus tempus magna, eget auctor metus lacinia nec. Cras ligula lacus, sollicitudin non pharetra sed, aliquet eget tortor. Proin nec dignissim nibh, non sodales augue. Donec eget nulla id elit fringilla euismod. ",
+        "Equilibrium shall be reached. ",
     },
     options: {
       iconUrl: "/factions/Corrupters_logo-1.png",
@@ -69,7 +69,7 @@ const IconList: {
     sidebar: {
       title: "The United Tribes of Nakoda",
       content:
-        "Etiam non nulla faucibus, congue nisl eu, condimentum purus. Quisque volutpat sollicitudin dui non hendrerit. Curabitur porttitor turpis tempor nulla commodo elementum. Duis ultricies felis a nisi tristique, id dignissim augue scelerisque. Aliquam luctus tempus magna, eget auctor metus lacinia nec. Cras ligula lacus, sollicitudin non pharetra sed, aliquet eget tortor. Proin nec dignissim nibh, non sodales augue. Donec eget nulla id elit fringilla euismod. ",
+        "In unison with the spirits.",
     },
     options: {
       iconUrl: "/factions/Nakoda_logo-1.png",
@@ -86,7 +86,7 @@ const IconList: {
     sidebar: {
       title: "Ziton Corporation",
       content:
-        "Etiam non nulla faucibus, congue nisl eu, condimentum purus. Quisque volutpat sollicitudin dui non hendrerit. Curabitur porttitor turpis tempor nulla commodo elementum. Duis ultricies felis a nisi tristique, id dignissim augue scelerisque. Aliquam luctus tempus magna, eget auctor metus lacinia nec. Cras ligula lacus, sollicitudin non pharetra sed, aliquet eget tortor. Proin nec dignissim nibh, non sodales augue. Donec eget nulla id elit fringilla euismod. ",
+        "Order is the right answer.",
     },
     options: {
       iconUrl: "/factions/Ziton_logo-1.png",
@@ -103,7 +103,7 @@ const IconList: {
     sidebar: {
       title: "Gan Eden",
       content:
-        "Etiam non nulla faucibus, congue nisl eu, condimentum purus. Quisque volutpat sollicitudin dui non hendrerit. Curabitur porttitor turpis tempor nulla commodo elementum. Duis ultricies felis a nisi tristique, id dignissim augue scelerisque. Aliquam luctus tempus magna, eget auctor metus lacinia nec. Cras ligula lacus, sollicitudin non pharetra sed, aliquet eget tortor. Proin nec dignissim nibh, non sodales augue. Donec eget nulla id elit fringilla euismod. ",
+        "\"Ignite the spark of rebellion. \"",
     },
     options: {
       iconUrl: "/factions/GanEden_logo-1.png",
@@ -120,7 +120,7 @@ const IconList: {
     sidebar: {
       title: "Cairon Empire",
       content:
-        "A nation most regal in name, a peoples most opulent in nature.",
+        "Power reigns absolute. \n The Cairon Empire is a nation most regal in name and its peoples are most opulent in nature.",
     },
     options: {
       iconUrl: "/factions/Cairon_logo-1.png",
