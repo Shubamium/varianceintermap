@@ -31,9 +31,12 @@ const IconList: {
     name: "Seraphine",
     position: [5100, 4600], // Position in Pixel Coordinate
     sidebar: {
-      title: "Seraphine",
+      title: "The Cult of La' Seraphine",
       content:
-        "\"May the goddess bless you. \" \n \"Each step on the path of the righteous is guided by the grace of the Goddess. Your time in the Stel LaPhia has prepared you for the challenge ahead. Make the journey of the soul, and fly on wings of faith to the land that was promised. There, you will find true bliss.\"",
+        `❝ May the goddess bless you. ❞
+        
+        Bathed in the Goddess' tears, the Cult of La' Seraphine follow her teaching faithfully, drawing power from their emotional tides, a testament to the devine dance of cosmic intention.
+        `,
     },
     options: {
       iconUrl: "/factions/Seraphine_logo-1.png",
@@ -49,9 +52,12 @@ const IconList: {
     name: "Corrupter",
     position: [5450, 1000], 
     sidebar: {
-      title: "Corrupter",
+      title: "The Corrupted",
       content:
-        "Equilibrium shall be reached. ",
+        `❝ Equilibrium shall be reached. ❞
+        
+        Driven by an insatiable hunger for aracana, those influenced by the ancient whispers of Izun ravage through realms, casting shadows of chaos and despair.
+        `,
     },
     options: {
       iconUrl: "/factions/Corrupters_logo-1.png",
@@ -67,9 +73,12 @@ const IconList: {
     name: "Nakoda",
     position: [5200, 2200],
     sidebar: {
-      title: "The United Tribes of Nakoda",
+      title: "The United Clans of Nakoda",
       content:
-        "In unison with the spirits.",
+        `❝ In unison with the spirits. ❞
+        
+        In the spirtual harmony of the wilderness, the clans of Nakoda intertwine their destinies with the rhythmns of the earth, their shared essence echoing the song of unity.
+        `,
     },
     options: {
       iconUrl: "/factions/Nakoda_logo-1.png",
@@ -86,7 +95,12 @@ const IconList: {
     sidebar: {
       title: "Ziton Corporation",
       content:
-        "Order is the right answer.",
+        `❝ Order is the right answer. ❞
+        
+        Xtasis, the planet’s largest city, thrives on its monopoly of Arcana Stones. The abundance of energy from these stones led to the rise of Ziton Corporation, which developed groundbreaking arcana technology and established itself as a leading high-tech enterprise in the region.
+        
+        Yet between the city's center and Outer Rim lies a darker side, a society where the rich get richer amd the poor left behind.
+        `,
     },
     options: {
       iconUrl: "/factions/Ziton_logo-1.png",
@@ -103,7 +117,12 @@ const IconList: {
     sidebar: {
       title: "Gan Eden",
       content:
-        "\"Ignite the spark of rebellion. \"",
+        `❝ Ignite the spark of rebellion.  ❞
+        
+        Rejecting the hollow neon glow of Xtasis, the rebels of Gan Eden fight tooth and nail to reclaim a future stolen by greed. Their mission is clear: cleanse Arcblight's poison, stop Ziton's plunder, and build an untamed garden where life can flourish.
+        
+        Ziton has tech, numbers, and wealth, but Gan Eden has something stronger ー the will to fight for a world worth living in.
+        `,
     },
     options: {
       iconUrl: "/factions/GanEden_logo-1.png",
@@ -118,9 +137,11 @@ const IconList: {
     name: "Cairon Empire",
     position: [4150, 1300] ,
     sidebar: {
-      title: "Cairon Empire",
+      title: "The Cairon Empire",
       content:
-        "Power reigns absolute. \n The Cairon Empire is a nation most regal in name and its peoples are most opulent in nature.",
+        `❝ Power reigns absolute. ❞
+
+        The Cairon Empire is a nation most regal in name and its peoples are most opulent in nature. Within the empire corrupt nobles dance upon a stage of treachery, while wars echo the symphony of shattered souls.`,
     },
     options: {
       iconUrl: "/factions/Cairon_logo-1.png",

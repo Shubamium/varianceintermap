@@ -15,7 +15,14 @@ function App() {
           CLOSE
         </button>
         <h1>{title}</h1>
-        <p>{desc}</p>
+        <p>
+          {desc.split('\n').map((line, i) => (
+            <span key={i}>
+              {line}
+              <br />
+            </span>
+          ))}
+        </p>
       </div>
       <LeafletMap
         openSidebar={(name: string, sbDesc: string) => {
