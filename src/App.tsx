@@ -11,12 +11,12 @@ function App() {
   return (
     <>
       <div className={`sidebar ${sb ? "open" : "closed"}`}>
-        <button className="btn" onClick={() => setSb(!sb)}>
+        <button className="btn btn-main" onClick={() => setSb(!sb)}>
           CLOSE
         </button>
         <h1>{title}</h1>
         <p>
-          {desc.split('\n').map((line, i) => (
+          {desc.split("\n").map((line, i) => (
             <span key={i}>
               {line}
               <br />
@@ -26,16 +26,7 @@ function App() {
       </div>
       {/* Clickable text that opens the sidebar */}
       <button
-        className="btn"
-        style={{
-          position: "fixed",
-          bottom: "25px",
-          left: "5px",
-          zIndex: 1000,
-          fontSize: "1.5rem",
-          padding: "0.75em 2em",
-          color: "white"
-        }}
+        className="btn btn-main credit"
         onClick={() => {
           setSb(true);
           setTitle("Map Asset Credits");
