@@ -104,9 +104,10 @@ const IconList: {
       content:
         `❝ Order is the right answer. ❞
         
-        Xtasis, capitol of the United Dunari Federation, is a city built through the exploitation of Arcana Stones.  The abundance of energy from these stones led to the rise of Ziton Corporation, which developed groundbreaking arcana technology and established itself as a leading high-tech enterprise in the region.
-        
-        Yet between the city's center and Outer Rim lies a darker side, a society where the rich get richer and the poor left behind.
+        Xtasis, capital of the United Dunari Federation, is a high-tech utopia built through the exploitation of Arcana Stones. Within Xtasis, Ziton Corporation holds monopoly over these stones and uses their abundant energy to develop groundbreaking arcana technology, establishing itself as the leading tech enterprise in the region.
+
+        Yet between the city's center and Outer Rim lies a darker side, a society where the rich get richer and the poor are left behind.
+
         `,
     },
     options: {
