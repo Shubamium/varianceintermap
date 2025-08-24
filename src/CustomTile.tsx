@@ -1,5 +1,4 @@
 /* eslint-disable react-hooks/exhaustive-deps */
-/* eslint-disable @typescript-eslint/no-unused-vars */
 
 import { useEffect, useRef } from "react";
 import L from "leaflet";
@@ -8,7 +7,7 @@ import RasterCoords from "leaflet-rastercoords";
 import "leaflet/dist/leaflet.css";
 
 // Map Image Size
-const size = [8192, 5063];
+const size = [8000, 5063];
 
 // Use this function to convert pixel to latlng for position
 // [X,Y]
@@ -32,8 +31,7 @@ const IconList: {
     position: [5100, 4600], // Position in Pixel Coordinate
     sidebar: {
       title: "The Cult of La' Seraphine",
-      content:
-        `❝ May the goddess bless you. ❞
+      content: `❝ May the goddess bless you. ❞
         
         Bathed in the Goddess' tears, the Seraphine follow her teaching faithfully, drawing power from their emotional tides, a testament to the divine dance of cosmic intention.
 
@@ -52,11 +50,10 @@ const IconList: {
   },
   {
     name: "Corrupter",
-    position: [5450, 1000], 
+    position: [5450, 1000],
     sidebar: {
       title: "The Corrupters",
-      content:
-        `❝ Equilibrium shall be reached. ❞
+      content: `❝ Equilibrium shall be reached. ❞
         
         The Corrupters are beings influenced by the ancient whispers of Izun, God of Corruption. Often, Corrupters are driven by an insatiable hunger for aracana and will ravage through realms, casting shadows of chaos and despair.
 
@@ -79,8 +76,7 @@ const IconList: {
     position: [5200, 2200],
     sidebar: {
       title: "The United Clans of Nakoda",
-      content:
-        `❝ In unison with the spirits. ❞
+      content: `❝ In unison with the spirits. ❞
         
         In spirtual harmony with the wilderness, the clans of Nakoda intertwine their destinies with the rhythmns of the earth, their shared essence echoing the song of unity.
         
@@ -98,11 +94,10 @@ const IconList: {
   },
   {
     name: "Ziton Corporation",
-    position: [1780, 3100] ,
+    position: [1780, 3100],
     sidebar: {
       title: "Ziton Corporation",
-      content:
-        `❝ Order is the right answer. ❞
+      content: `❝ Order is the right answer. ❞
         
         Xtasis, capitol of the United Dunari Federation, is a city built through the exploitation of Arcana Stones.  The abundance of energy from these stones led to the rise of Ziton Corporation, which developed groundbreaking arcana technology and established itself as a leading high-tech enterprise in the region.
         
@@ -120,11 +115,10 @@ const IconList: {
   },
   {
     name: "Gan Eden",
-    position: [1630, 3650] ,
+    position: [1630, 3650],
     sidebar: {
       title: "Gan Eden",
-      content:
-        `❝ Ignite the spark of rebellion.  ❞
+      content: `❝ Ignite the spark of rebellion.  ❞
         
         Rejecting the hollow neon glow of Xtasis, the rebels of Gan Eden fight tooth and nail to reclaim a future stolen by greed. Their mission is clear: cleanse Arcblight's poison, stop Ziton's plunder, and build an untamed garden where life can flourish.
         
@@ -142,18 +136,16 @@ const IconList: {
   },
   {
     name: "Cairon Empire",
-    position: [4150, 1300] ,
+    position: [4150, 1300],
     sidebar: {
       title: "The Cairon Empire",
-      content:
-        `❝ Power reigns absolute. ❞
+      content: `❝ Power reigns absolute. ❞
 
         The Cairon Empire is a nation most regal in name and its peoples are most opulent in nature. Within the empire corrupt nobles dance upon a stage of treachery, while wars echo the symphony of shattered souls.
         
         The Empire stands unchallenged within its borders, led by the imperial family which holds the authority of Valorbane, a legendary sentient sword. So long as this sword has a wielder, the Cairon Empire thrives.
         `,
-
-      },  
+    },
     options: {
       iconUrl: "/factions/Cairon_logo-1.png",
       iconSize: [130, 150],
@@ -181,7 +173,7 @@ const PlacesNameList: {
       }),
     },
   },
-    {
+  {
     position: [5060, 2500],
     options: {
       title: "The Sanctuary",
@@ -192,7 +184,7 @@ const PlacesNameList: {
       }),
     },
   },
-      {
+  {
     position: [4700, 2020],
     options: {
       title: "Lignarian Frontier",
@@ -214,7 +206,7 @@ const PlacesNameList: {
       }),
     },
   },
-    {
+  {
     position: [3200, 1060],
     options: {
       title: "Kingdom of Vespasia",
@@ -225,7 +217,7 @@ const PlacesNameList: {
       }),
     },
   },
-    {
+  {
     position: [3850, 1100],
     options: {
       title: "Kingdom of Raganvald",
@@ -236,7 +228,7 @@ const PlacesNameList: {
       }),
     },
   },
-    {
+  {
     position: [4100, 1500],
     options: {
       title: "Heart of Cairon",
@@ -258,7 +250,7 @@ const PlacesNameList: {
   //     }),
   //   },
   // },
-    {
+  {
     position: [3950, 1350],
     options: {
       title: "Sable Silver Mines",
@@ -269,7 +261,7 @@ const PlacesNameList: {
       }),
     },
   },
-    {
+  {
     position: [5100, 4690],
     options: {
       title: "Del LaPhia",
@@ -280,7 +272,7 @@ const PlacesNameList: {
       }),
     },
   },
-      {
+  {
     position: [1770, 3500],
     options: {
       title: "Xtasis",
@@ -302,7 +294,7 @@ const PlacesNameList: {
   //     }),
   //   },
   // },
-    {
+  {
     position: [5050, 1600],
     options: {
       title: "The Great Wound",
@@ -313,7 +305,7 @@ const PlacesNameList: {
       }),
     },
   },
-      {
+  {
     position: [5900, 1350],
     options: {
       title: "Banyaku Delta",
@@ -399,18 +391,17 @@ export default function LeafletMap({
           map.removeLayer(smallPlaces);
         }
       });
+      const resize = new ResizeObserver(() => {
+        map.invalidateSize();
+        console.log("resize");
+      });
+      resize.observe(mapRef.current);
     }
   }, []);
 
   return (
     <>
-      <div
-        ref={mapRef}
-        id="map"
-        className="map"
-        style={{ width: "100vw", height: "100vh" }}
-      ></div>
-      <p>aaa</p>
+      <div ref={mapRef} id="map" className="map"></div>
     </>
   );
 }
