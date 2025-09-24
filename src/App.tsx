@@ -1,13 +1,38 @@
 import "leaflet/dist/leaflet.css";
 import LeafletMap from "./CustomTile";
 import "./App.scss";
-import { useState } from "react";
-
+import { useEffect, useState } from "react";
+import { FaMusic, FaVolumeMute } from "react-icons/fa";
+import { Howl } from "howler";
 function App() {
   const [sb, setSb] = useState(false);
   const [title, setTitle] = useState("");
   const [desc, setDesc] = useState("");
+  const [bgm, setBgm] = useState(true);
+  const [ap, setAp] = useState<Howl | null>(null);
+  useEffect(() => {
+    const hl = new Howl({
+      src: ["a/bgm.mp3"],
+      loop: true,
+      volume: 0.65,
+    });
 
+    hl.play();
+    setAp(hl);
+
+    return () => {
+      hl.stop();
+      hl.unload();
+    };
+  }, []);
+
+  useEffect(() => {
+    if (bgm) {
+      ap?.fade(0, 0.65, 500);
+    } else {
+      ap?.fade(0.65, 0, 500);
+    }
+  }, [ap, bgm]);
   return (
     <>
       <div className={`sidebar ${sb ? "open" : "closed"}`}>
@@ -25,6 +50,9 @@ function App() {
         </p>
       </div>
       {/* Clickable text that opens the sidebar */}
+      <button className="btn btn-main btn-audio" onClick={() => setBgm(!bgm)}>
+        {bgm ? <FaMusic /> : <FaVolumeMute />}
+      </button>
       <button
         className="btn btn-main credit"
         onClick={() => {
@@ -57,6 +85,7 @@ function App() {
       >
         Credits
       </button>
+
       <LeafletMap
         openSidebar={(name: string, sbDesc: string) => {
           setSb(() => true);
