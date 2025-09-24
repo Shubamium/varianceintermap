@@ -31,7 +31,7 @@ const IconList: {
     position: [5100, 4600], // Position in Pixel Coordinate
     sidebar: {
       title: "The Cult of La' Seraphine",
-      content: `❝ May the goddess bless you. ❞
+      content: `❝ May the Goddess bless you. ❞
         
         Bathed in the Goddess' tears, the Seraphine follow her teaching faithfully, drawing power from their emotional tides, a testament to the divine dance of cosmic intention.
 
@@ -55,7 +55,7 @@ const IconList: {
       title: "The Corrupters",
       content: `❝ Equilibrium shall be reached. ❞
         
-        The Corrupters are beings influenced by the ancient whispers of Izun, God of Corruption. Often, Corrupters are driven by an insatiable hunger for aracana and will ravage through realms, casting shadows of chaos and despair.
+        The Corrupters are beings tempted by the whispers of Izun, God of Corruption. Often, Corrupters are driven by an insatiable hunger for aracana and will ravage through realms, casting shadows of chaos and despair.
 
         Izun, once the God of Balance, wished to create equilibrium between the Gods and their creations. Yet betrayed and imprisoned, he awaits his chance to end it all in the name of true balance.
 
