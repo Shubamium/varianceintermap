@@ -230,6 +230,17 @@ const PlacesNameList: {
     },
   },
   {
+    position: [4550, 1250],
+    options: {
+      title: "Port Perrenia",
+      icon: L.divIcon({
+        className: "poi",
+        html: "Port Perrenia",
+        iconSize: [200, 200],
+      }),
+    },
+  },
+  {
     position: [4100, 1500],
     options: {
       title: "Heart of Cairon",
